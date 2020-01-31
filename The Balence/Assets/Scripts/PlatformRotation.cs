@@ -20,15 +20,19 @@ public class PlatformRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        speedRotate -= Input.GetAxisRaw("Horizontal") * RotateAcceleration;
+
+        Debug.Log(Input.GetAxisRaw("Horizontal"));
         if (Input.GetKey(KeyCode.A) && speedRotate <= rotateSpeed)
         {
-            speedRotate += RotateAcceleration;
+            //speedRotate += RotateAcceleration;
             isrotating = true;
 
         }
         else if (Input.GetKey(KeyCode.D) && speedRotate >= -rotateSpeed)
         {
-            speedRotate -= RotateAcceleration;
+            //speedRotate -= RotateAcceleration;
             isrotating = true;
 
         }
