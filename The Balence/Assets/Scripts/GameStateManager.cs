@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
+    public GameObject GameWinCanvas;
+    public GameObject LoseCanvas;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameWinCanvas.SetActive(false);
+        LoseCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,11 +21,12 @@ public class GameStateManager : MonoBehaviour
 
     public void PlayerWin()
     {
-        Debug.Log("PlayerWin");
+        GameWinCanvas.SetActive(true);
     }
 
     public void PlayerLose()
     {
+        LoseCanvas.SetActive(true);
         Debug.Log("PlayerLose");
     }
 

@@ -6,11 +6,12 @@ public class FoodStates : MonoBehaviour
 {
     public int currentFoodState;
     public GameObject Win;
-    
+    GameStateManager gameState;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameState = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameStateManager>();
         currentFoodState = 0;
     }
 
@@ -19,7 +20,7 @@ public class FoodStates : MonoBehaviour
     {
         if (currentFoodState == 3)
         {
-            Win.SetActive(true);
+            gameState.PlayerWin();
         }
     }
 

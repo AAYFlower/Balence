@@ -30,6 +30,7 @@ public class Timer : MonoBehaviour
         if (timer <= 0)
         {
             gameState.PlayerWin();
+            TimerText.gameObject.SetActive(false);
         }
     }
 }

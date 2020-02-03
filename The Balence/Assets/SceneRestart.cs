@@ -15,7 +15,22 @@ public class SceneRestart : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Application.LoadLevel(Application.loadedLevel);
+            RestartScene();
         }
+    }
+
+    public void RestartScene()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void nextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
