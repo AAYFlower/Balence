@@ -6,11 +6,13 @@ public class GameStateManager : MonoBehaviour
 {
     public GameObject GameWinCanvas;
     public GameObject LoseCanvas;
+    bool PlayerobjStatus;
     // Start is called before the first frame update
     void Start()
     {
         GameWinCanvas.SetActive(false);
         LoseCanvas.SetActive(false);
+        PlayerobjStatus = false;
     }
 
     // Update is called once per frame
@@ -21,13 +23,21 @@ public class GameStateManager : MonoBehaviour
 
     public void PlayerWin()
     {
-        GameWinCanvas.SetActive(true);
+        if (PlayerobjStatus == false)
+        {
+            PlayerobjStatus = true;
+            GameWinCanvas.SetActive(true);
+        }
     }
 
     public void PlayerLose()
     {
-        LoseCanvas.SetActive(true);
-        Debug.Log("PlayerLose");
+        if (PlayerobjStatus == false)
+        {
+            PlayerobjStatus = true;
+            LoseCanvas.SetActive(true);
+            Debug.Log("PlayerLose");
+        }
     }
 
 }
