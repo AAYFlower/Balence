@@ -8,6 +8,9 @@ TagManager:
   - LoseCondition
   - UFO
   - Platform
+  - FishTank
+  - Hook
+  - KillFish
   layers:
   - Default
   - TransparentFX
