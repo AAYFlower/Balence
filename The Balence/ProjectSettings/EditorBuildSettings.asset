@@ -25,8 +25,11 @@ EditorBuildSettings:
     guid: 418592421a429ab48aa7973f9cb95cde
   - enabled: 1
     path: Assets/Scenes/Plant.unity
-    guid: 9adcdfccd341db647818d3d7adaff0dc
+    guid: 667d652f217d6c049ba3a2d7f8d8d702
   - enabled: 1
     path: Assets/Scenes/Dragon.unity
     guid: ea0dd3a133afb664cb8fdcc4ec53f3ae
+  - enabled: 1
+    path: Assets/Scenes/Climb.unity
+    guid: 9adcdfccd341db647818d3d7adaff0dc
   m_configObjects: {}
