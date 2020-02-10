@@ -955,6 +955,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871773021}
   m_CullTransparentMesh: 0
+--- !u!1 &876377853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876377854}
+  - component: {fileID: 876377856}
+  - component: {fileID: 876377855}
+  m_Layer: 5
+  m_Name: TimerText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &876377854
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876377853}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7583813, y: 0.7583813, z: 0.7583813}
+  m_Children: []
+  m_Father: {fileID: 1389133716}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 183, y: 108}
+  m_SizeDelta: {x: 537.15, y: 198.68}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &876377855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876377853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Timer
+
+'
+--- !u!222 &876377856
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876377853}
+  m_CullTransparentMesh: 0
 --- !u!1 &961611308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1701,7 @@ RectTransform:
   - {fileID: 1641779585}
   - {fileID: 64762337}
   - {fileID: 2027480845}
+  - {fileID: 876377854}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1701,6 +1783,7 @@ GameObject:
   - component: {fileID: 1419566186}
   - component: {fileID: 1419566187}
   - component: {fileID: 1419566188}
+  - component: {fileID: 1419566189}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -1750,6 +1833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 10
   TimerText: {fileID: 0}
+  isloseCondition: 0
 --- !u!114 &1419566187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1774,6 +1858,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c290898444f86947ab9f1b6700a7ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1419566189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419566183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb197fe1cee83e478df59edf5078513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 20
+  TimerText: {fileID: 876377855}
+  isloseCondition: 1
 --- !u!1 &1491948098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +2051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def419e9008ed04ba779d2147e9cff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   movingright: 0
 --- !u!212 &1530687316
 SpriteRenderer:
@@ -2458,7 +2557,7 @@ GameObject:
   - component: {fileID: 1687118800}
   - component: {fileID: 1687118798}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: KillFish
   m_TagString: KillFish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2902,6 +3001,7 @@ GameObject:
   - component: {fileID: 1970684742}
   - component: {fileID: 1970684744}
   - component: {fileID: 1970684743}
+  - component: {fileID: 1970684745}
   m_Layer: 0
   m_Name: Border
   m_TagString: FishTank
@@ -2974,6 +3074,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.009130001, y: 0.2888568}
+  m_EdgeRadius: 0
+--- !u!61 &1970684745
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970684741}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0018529892, y: -0.10681802}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5645528, y: 0.021418124}
   m_EdgeRadius: 0
 --- !u!1 &2027480844
 GameObject:

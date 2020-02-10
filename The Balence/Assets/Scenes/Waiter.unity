@@ -281,9 +281,9 @@ GameObject:
   m_Component:
   - component: {fileID: 51135277}
   - component: {fileID: 51135276}
-  - component: {fileID: 51135275}
   - component: {fileID: 51135278}
   - component: {fileID: 51135279}
+  - component: {fileID: 51135275}
   m_Layer: 0
   m_Name: platform
   m_TagString: Untagged
@@ -300,10 +300,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 51135274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dca8dc54f6347147b6e76c872620f9b, type: 3}
+  m_Script: {fileID: 11500000, guid: e271b2999c73c994d87bee0940108ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotateAcceleration: 3
+  RotateAcceleration: 6
   rotateSpeed: 100
 --- !u!212 &51135276
 SpriteRenderer:
@@ -722,10 +722,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1270,7 +1270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &766007467
 RectTransform:
   m_ObjectHideFlags: 0

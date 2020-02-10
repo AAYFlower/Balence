@@ -11,6 +11,9 @@ TagManager:
   - FishTank
   - Hook
   - KillFish
+  - Rain
+  - Peasent
+  - Wall
   layers:
   - Default
   - TransparentFX

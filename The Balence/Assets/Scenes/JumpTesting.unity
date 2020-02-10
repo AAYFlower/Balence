@@ -1007,6 +1007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14793841e066b742b7f7cf0cea869f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameWinCanvas: {fileID: 0}
+  LoseCanvas: {fileID: 0}
 --- !u!114 &1419566186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,6 +1023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 10
   TimerText: {fileID: 1357765883}
+  isloseCondition: 0
 --- !u!114 &1419566187
 MonoBehaviour:
   m_ObjectHideFlags: 0
