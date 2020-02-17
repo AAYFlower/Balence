@@ -5,7 +5,7 @@ using UnityEngine;
 public class FoodStates : MonoBehaviour
 {
     public int currentFoodState;
-    public GameObject Win;
+
     GameStateManager gameState;
 
     // Start is called before the first frame update
