@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour
 
         if(TimerText != null)
         {
-            TimerText.text = timer.ToString();
+            TimerText.text = timer.ToString("F1");
         }
 
         if (timer <= 0)

@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Climb.unity
     guid: 9adcdfccd341db647818d3d7adaff0dc
+  - enabled: 1
+    path: Assets/Scenes/Boba.unity
+    guid: 7b336aa9bb61a0d4eb8d1efaef71ffa2
   m_configObjects: {}
