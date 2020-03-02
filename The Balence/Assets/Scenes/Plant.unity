@@ -5388,6 +5388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1001b7005302bdb409bfaa98d4608bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  destroyOncontact: 1
 --- !u!61 &1232268268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5677,6 +5683,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1001b7005302bdb409bfaa98d4608bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  destroyOncontact: 1
 --- !u!1 &1266619318
 GameObject:
   m_ObjectHideFlags: 0
@@ -6294,6 +6306,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6558317077282808437, guid: 0f0751e2ddb1da5448c77eec1300bb1b,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ebc82979cdd84394e909886985874a58, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f0751e2ddb1da5448c77eec1300bb1b, type: 3}
 --- !u!224 &1326298992 stripped
@@ -6498,6 +6515,7 @@ GameObject:
   - component: {fileID: 1386320492}
   - component: {fileID: 1386320491}
   - component: {fileID: 1386320490}
+  - component: {fileID: 1386320493}
   m_Layer: 0
   m_Name: Rain
   m_TagString: Untagged
@@ -11240,6 +11258,102 @@ Transform:
   m_Father: {fileID: 14735354}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!82 &1386320493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386320489}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c796e6c28e35e4d4382b03fd59ba968f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.316
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 235
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1386670618
 GameObject:
   m_ObjectHideFlags: 0
@@ -13108,6 +13222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1001b7005302bdb409bfaa98d4608bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  destroyOncontact: 1
 --- !u!61 &1672509746
 BoxCollider2D:
   m_ObjectHideFlags: 0
