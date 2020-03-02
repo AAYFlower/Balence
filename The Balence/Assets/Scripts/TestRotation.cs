@@ -10,10 +10,14 @@ public class TestRotation : MonoBehaviour
     private float speedRotate;
     bool isrotating;
 
+   // AudioSource audioData;
 
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
+
+        //audioData = GetComponent<AudioSource>;
+        //audioData.Play(0);
     }
 
     // Update is called once per frame
@@ -26,12 +30,14 @@ public class TestRotation : MonoBehaviour
         {
             //speedRotate += RotateAcceleration;
             isrotating = true;
+           // audioData.Play(1);
 
         }
         else if (Input.GetKey(KeyCode.D) && speedRotate >= -rotateSpeed)
         {
             //speedRotate -= RotateAcceleration;
             isrotating = true;
+            //audioData.Play(1);
 
         }
         else

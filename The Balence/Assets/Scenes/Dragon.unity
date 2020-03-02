@@ -2633,6 +2633,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1001b7005302bdb409bfaa98d4608bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  destroyOncontact: 1
 --- !u!61 &1232268268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2871,6 +2877,85 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &1339037888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5389284480763868886, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_Name
+      value: Background Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868884, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389284480763868887, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 196e4213de73a1c4e9794b7d261fa8d6, type: 3}
+    - target: {fileID: 5389284480763868887, guid: f54facb584baba842ba5636ece7b6317,
+        type: 3}
+      propertyPath: Priority
+      value: 146
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f54facb584baba842ba5636ece7b6317, type: 3}
 --- !u!1 &1414753602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3373,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1001b7005302bdb409bfaa98d4608bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  destroyOncontact: 1
 --- !u!61 &1672509746
 BoxCollider2D:
   m_ObjectHideFlags: 0
