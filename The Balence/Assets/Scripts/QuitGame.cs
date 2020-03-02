@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quit : MonoBehaviour
+public class QuitGame : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,9 @@ public class Quit : MonoBehaviour
     void Update()
     {
         
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

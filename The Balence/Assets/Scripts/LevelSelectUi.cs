@@ -6,10 +6,12 @@ public class LevelSelectUi : MonoBehaviour
 {
 
     public GameObject levelSelect;
+    public GameObject levelSelect2;
     // Start is called before the first frame update
     void Start()
     {
         levelSelect.SetActive(false);
+        levelSelect2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class LevelSelectUi : MonoBehaviour
     public void EnableLevelCanvas()
     {
         levelSelect.SetActive(true);
+        
     }
 
     public void disableLevelCanvas()
@@ -29,4 +32,14 @@ public class LevelSelectUi : MonoBehaviour
         levelSelect.SetActive(false);
     }
 
+    public void EnableLevelCanvas2()
+    {
+        levelSelect2.SetActive(true);
+
+    }
+
+    public void disableLevelCanvas2()
+    {
+        levelSelect2.SetActive(false);
+    }
 }

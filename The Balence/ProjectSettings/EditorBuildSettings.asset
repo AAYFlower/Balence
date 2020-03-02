@@ -10,13 +10,13 @@ EditorBuildSettings:
     guid: efb0ece739a5b6f46a35dea992c17d40
   - enabled: 1
     path: Assets/Scenes/Balence.unity
-    guid: 17a3a1a665ec2cc4a9f0f7c40b2d5008
+    guid: d3c37eeefd5063b4b99f64a123a25533
   - enabled: 1
     path: Assets/Scenes/Shark.unity
     guid: e0e562be64e9e1042b5def6444982752
   - enabled: 1
     path: Assets/Scenes/Waiter.unity
-    guid: cd718c725800f0045ade048777798e44
+    guid: ed4e6a7603f97a34da52a6346dec954f
   - enabled: 1
     path: Assets/Scenes/ET.unity
     guid: bc3fbab61ac0537488341ff56f51a5f7
@@ -35,4 +35,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boba.unity
     guid: 7b336aa9bb61a0d4eb8d1efaef71ffa2
+  - enabled: 1
+    path: Assets/Scenes/BalenceAlter.unity
+    guid: 17a3a1a665ec2cc4a9f0f7c40b2d5008
+  - enabled: 1
+    path: Assets/Scenes/SharkAlter.unity
+    guid: 77afcbecd2c9da14084baca06c6fca1f
+  - enabled: 1
+    path: Assets/Scenes/WaiterAlter.unity
+    guid: cd718c725800f0045ade048777798e44
+  - enabled: 1
+    path: Assets/Scenes/ETAlter.unity
+    guid: 3c23085d02982da4aaf6099f329dc85a
+  - enabled: 1
+    path: Assets/Scenes/FishingAlter.unity
+    guid: 488ae2dbc919f9e46aabd1d87219aaea
+  - enabled: 1
+    path: Assets/Scenes/PlantAlter.unity
+    guid: 3e868168ea6282e46919f3740de75987
   m_configObjects: {}

@@ -6,6 +6,7 @@ public class Petmanager : MonoBehaviour
 {
     int amountofFish;
     GameStateManager gsm;
+    public bool isAlter = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,10 @@ public class Petmanager : MonoBehaviour
     public void SubtractFish()
     {
         amountofFish -= 1;
+        if(isAlter == true)
+        {
+            gsm.PlayerLose();
+        }
     }
 
 }

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class OnContact : MonoBehaviour
 {
 
     GameStateManager gameState;
+    public UnityEvent loseEvent;
+    public bool destroyOncontact = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,11 @@ public class OnContact : MonoBehaviour
         if (collision.gameObject.tag == ("LoseCondition"))
         {
             gameState.PlayerLose();
-            Destroy(collision.gameObject);
+            loseEvent.Invoke();
+            if (destroyOncontact == true)
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 }
