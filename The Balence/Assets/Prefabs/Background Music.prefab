@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5389284480763868884}
   - component: {fileID: 5389284480763868887}
-  - component: {fileID: 5389284480763868885}
-  - component: {fileID: 5389284480763868890}
   m_Layer: 0
   m_Name: Background Music
-  m_TagString: BSide
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,28 +127,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5389284480763868885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5389284480763868886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bcd8a67f5b9a6549badd7b2b4d77ab9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5389284480763868890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5389284480763868886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a4b3d74f4714d44b92d1294cc1aeeda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BSideUnlocked: 0

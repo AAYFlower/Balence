@@ -3464,6 +3464,7 @@ GameObject:
   - component: {fileID: 1866137716}
   - component: {fileID: 1866137715}
   - component: {fileID: 1866137719}
+  - component: {fileID: 1866137720}
   m_Layer: 0
   m_Name: Shark
   m_TagString: LoseCondition
@@ -3587,6 +3588,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.10816017, y: -0.16179179}
   m_Size: {x: 3.0557873, y: 1.1114527}
   m_Direction: 1
+--- !u!114 &1866137720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866137714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae967e116581ba47b87e0cb45d7da02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1866223512
 GameObject:
   m_ObjectHideFlags: 0

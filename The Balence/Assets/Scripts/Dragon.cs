@@ -13,12 +13,17 @@ public class Dragon : MonoBehaviour
     public bool movingright;
     public float speed;
     public GameObject blood;
+
+    public AudioClip[] peasentClip;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         gameState = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameStateManager>();
+        audioSource = GetComponent<AudioSource>();
         peopleEaten = 0;
         dragonLevel = 0;
     }
@@ -72,6 +77,9 @@ public class Dragon : MonoBehaviour
             peopleEaten += 1;
             Instantiate(blood, transform.position, transform.rotation);
             Destroy(collision.gameObject);
+
+            audioSource.clip = peasentClip[dragonLevel];
+            audioSource.Play();
         }
     }
 }
