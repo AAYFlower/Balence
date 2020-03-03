@@ -12,11 +12,14 @@ public class plant : MonoBehaviour
     SpriteRenderer sr;
     bool growing;
     GameStateManager gameState;
+    public AudioClip[] PlantClip;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         gameState = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameStateManager>();
+        audioSource = GetComponent<AudioSource>();
         plantLevel = 0;
         growing = false;
     }
@@ -33,7 +36,11 @@ public class plant : MonoBehaviour
         if(growth >= GrowthAmountNeeded)
         {
             growth = 0;
+            
             plantLevel += 1;
+            audioSource.clip = PlantClip[plantLevel];
+            audioSource.Play();
+            
             sr.sprite = plantSprites[plantLevel];
 
         }
