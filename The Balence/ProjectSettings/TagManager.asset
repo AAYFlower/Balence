@@ -17,6 +17,7 @@ TagManager:
   - Hand
   - BSide
   - BCanvas
+  - Dragon
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
+  - tower
+  - NotTower
   - 
   - 
   - 
