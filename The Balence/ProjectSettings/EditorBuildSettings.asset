@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PlantAlter.unity
     guid: 3e868168ea6282e46919f3740de75987
   - enabled: 1
+    path: Assets/Scenes/DragonAlter.unity
+    guid: 84100a76a767a8c4cb67fcde75da369e
+  - enabled: 1
     path: Assets/Scenes/Climb Alternative.unity
     guid: dde1408fc6d888e4bba7c7246688e63f
   m_configObjects: {}
