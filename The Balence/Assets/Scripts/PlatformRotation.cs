@@ -11,6 +11,8 @@ public class PlatformRotation : MonoBehaviour
     public float rotateSpeed;
     bool isrotating;
     private float speedRotate;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class PlatformRotation : MonoBehaviour
         {
             //speedRotate -= RotateAcceleration;
             isrotating = true;
+            //sound.PlayOneShot(platformSfx);
 
         }
         else

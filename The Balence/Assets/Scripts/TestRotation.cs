@@ -9,8 +9,10 @@ public class TestRotation : MonoBehaviour
     private Rigidbody2D rb2D;
     private float speedRotate;
     bool isrotating;
+   // public AudioSource sound;
+    //public AudioClip platformSfx;
 
-   // AudioSource audioData;
+    // AudioSource audioData;
 
     void Start()
     {
@@ -30,7 +32,8 @@ public class TestRotation : MonoBehaviour
         {
             //speedRotate += RotateAcceleration;
             isrotating = true;
-           // audioData.Play(1);
+            // audioData.Play(1);
+           // sound.PlayOneShot(platformSfx);
 
         }
         else if (Input.GetKey(KeyCode.D) && speedRotate >= -rotateSpeed)
@@ -38,6 +41,7 @@ public class TestRotation : MonoBehaviour
             //speedRotate -= RotateAcceleration;
             isrotating = true;
             //audioData.Play(1);
+            //sound.PlayOneShot(platformSfx);
 
         }
         else
